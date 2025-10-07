@@ -1,0 +1,8 @@
+wp-content/uploads/
+wp-content/backups/
+wp-content/upgrade/
+*.zip
+*.tar
+*.sql
+*.bak
+
