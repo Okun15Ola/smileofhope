@@ -1,3 +1,43 @@
+# name: Build and Deploy to Azure Web App
+
+#on:
+#  push:
+#    branches:
+#      - main  # Deploy when pushing to main branch
+
+#jobs:
+ # build-and-deploy:
+  #  runs-on: ubuntu-latest
+
+  #  steps:
+      # Step 1: Checkout code
+    #  - name: Checkout repository
+    #    uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (adjust version as needed)
+    #  - name: Set up Node.js
+    #    uses: actions/setup-node@v3
+      #  with:
+     #     node-version: '18.x'
+
+      # Step 3: Install dependencies
+    #  - name: Install dependencies
+      #  run: npm install
+
+      # Step 4: Build project
+    #  - name: Build project
+       # run: npm run build
+
+      # Step 5: Deploy to Azure Web App
+     # - name: Deploy to Azure Web App
+       # uses: azure/webapps-deploy@v2
+       # with:
+        #  app-name: smileofhope
+        #  slot-name: production
+         # publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        #  package: .
+
+
 name: Build and Deploy to Azure Web App
 
 on:
@@ -36,4 +76,5 @@ jobs:
           slot-name: production
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
+
 
